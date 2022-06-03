@@ -1,0 +1,106 @@
+.benifits-bg {
+	display: flex;
+align-items: center;
+justify-content: center;
+	background-color: var(--our-team-background-color);
+	width: 100%;
+	
+@include mob {
+    width: 450px;
+	height: 120px;
+
+  }
+ @include tab {
+    width: 354px;
+	height: 120px;
+	
+  }
+  @include desk {
+    width: 270px;
+	height: 120px;
+	
+  }
+
+}
+	
+	
+.our-benefits {
+	padding-top: 60px;
+	padding-bottom: 60px;
+@include mob {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+@include tab {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	
+}
+@include desk {
+    padding-top: 89px;
+	padding-bottom: 94px;}
+	
+	 }
+	
+
+
+
+.our-benefits__list {
+	@extend %list;
+	margin-right: -30px;
+@include tab {
+		display: flex;	
+		flex-wrap: wrap;
+		}
+
+@include desk {
+		display: flex;
+		flex-wrap: nowrap;
+			
+		}
+}
+
+.our-benefits__item {
+	justify-content: center;
+margin-bottom: 30px;
+
+	@include tab {
+		flex-basis: calc((100% - 2 * 30px) / 2);
+	&:nth-child(odd) {
+		margin-right: 30px;
+	}
+	flex-wrap: wrap;
+	}
+
+@include desk {
+	flex-basis: calc((100% - 3 * 30px) / 3);
+&:not(:last-child) {
+	margin-right: 30px;
+	}}
+	
+}
+
+
+.our-benefits__title {
+	padding-top: 30px;
+	margin-bottom: 10px;
+	@include font(700, 14px, 1.14, 0.03em);
+	text-transform: uppercase;
+
+	@media screen and (max-width: 480px)
+	{text-align: center;
+
+	}
+		
+	}
+
+
+
+.our-benefits__text {
+	width: 100%;
+	@include font(normal, 14px, 1.71, 0.03em);
+	color: var(--main-text-color);
+	}
+
+

@@ -1,0 +1,65 @@
+.regular-clients__item  {
+@media screen and (max-width: 480px) {
+	margin-bottom: 30px;
+}
+ 
+
+@include mob {
+    flex-basis: calc((100% - 4 * 15px)/2);
+	display: flex;
+	margin: 15px;
+	flex-wrap: wrap;
+	
+  }
+  	@include tab {
+
+   flex-basis: calc((100% - 6 * 15px)/3);
+	display: flex;
+	margin: 15px;
+	flex-wrap: wrap;
+  }
+  @include desk {
+    flex-wrap: nowrap;
+display: flex;
+   flex-basis: calc((100% - 12 * 15px)/6);
+	
+	margin: 15px;
+	flex-wrap: wrap;
+	
+}
+	
+
+}
+
+
+.regular-clients__link {
+	
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	@extend %link-decoration;
+	fill: var(--color-soc-icons);
+	transition: color var(--animation-timing-function);
+	
+	&:hover, &:focus {border: 1px solid var(--focus-hover-color);
+	fill: var(--focus-hover-color);
+	transition: color var(--animation-timing-function);}
+
+@media screen and (min-width: 480px), (max-width: 480px) {
+    width: 210px;
+	height: 92px;
+  }
+  @include tab {
+    width: 226px;
+	height: 92px;
+}
+@include desk {
+    width: 170px;
+	height: 92px;
+  }
+
+
+}

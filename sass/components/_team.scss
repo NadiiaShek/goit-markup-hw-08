@@ -1,0 +1,45 @@
+.team {
+padding-bottom: 60px;
+	background-color: var(--our-team-background-color);
+	@media screen and (max-width: 480px), (min-width: 480px) {
+	 padding-top: 60px;
+	 padding-bottom: 30px;
+  }
+@include tab {
+	 padding-top: 60px;
+	padding-bottom: 30px;
+  }
+@include desk {
+	 padding-top: 94px;
+	padding-bottom: 94px;
+  }
+}
+
+
+
+
+
+.team__list {
+@extend %list;
+@include tab {
+		display: flex;	
+		flex-wrap: wrap;
+		}
+
+@include desk {
+		display: flex;
+		flex-wrap: nowrap;
+			
+		}
+  }
+
+
+.team-soc-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@extend %list;
+	padding-bottom: 24px;
+}
+
+
