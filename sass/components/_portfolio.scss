@@ -168,11 +168,22 @@ padding: 63px 24px;
 		1px 4px 6px rgba(0, 0, 0, 0.16);
 	transition: box-shadow var(--animation-timing-function);
     outline: 0;}
+
 	
+
+	@include tab {
+		display: flex;
+		flex-direction: column;
+		
+	}
+	@include desk {
+		display: block;
+		flex-direction: row
+	}
 	}
 
 .porfolio-border {
-	display: flex;
+	
 	flex-direction: column;	
     flex-grow: 1;
 	padding: 20px 24px;
@@ -180,6 +191,7 @@ padding: 63px 24px;
 	border-left: var(--border-style);
 	border-right: var(--border-style);
 	
+
 	
 }
 
@@ -192,5 +204,6 @@ padding: 63px 24px;
 .porfolio-border__text { 
 @include font(400, 16px, 1.88, 0.03em);
 	color: var(--main-text-color);
+	
 }
 

@@ -120,21 +120,34 @@
 
 
 .text-checkbox {
+	display: inline-block;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
 	
 
-	
 	color: var(--main-text-color);
-	@include mob {
+@include mob { 
+		flex-wrap: nowrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 		@include font(normal, 12px, 1.16, 0.03em);
 		
 	}
   @include tab {
 		@include font(normal, 12px, 1.16, 0.03em);
 		flex-wrap: nowrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	} 
 	@include desk {
 		@include font(normal, 14px, 1.71, 0.03em);
-			
+		flex-wrap: nowrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
 	}
 }
 

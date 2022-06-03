@@ -1187,9 +1187,20 @@ header {
   transition: box-shadow var(--animation-timing-function);
   outline: 0;
 }
+@media screen and (min-width: 768px) {
+  .portfolio-wrap__link {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-wrap__link {
+    display: block;
+    flex-direction: row;
+  }
+}
 
 .porfolio-border {
-  display: flex;
   flex-direction: column;
   flex-grow: 1;
   padding: 20px 24px;
@@ -1953,10 +1964,18 @@ header {
 }
 
 .text-checkbox {
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   color: var(--main-text-color);
 }
 @media screen and (min-width: 480px) {
   .text-checkbox {
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: normal;
     font-size: 12px;
     line-height: 1.16;
@@ -1970,6 +1989,9 @@ header {
     line-height: 1.16;
     letter-spacing: 0.03em;
     flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1978,6 +2000,10 @@ header {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
