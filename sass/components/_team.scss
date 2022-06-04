@@ -39,7 +39,9 @@ padding-bottom: 60px;
 	align-items: center;
 	justify-content: center;
 	@extend %list;
-	padding-bottom: 24px;
+	
 }
 
-
+.team-soc-item { 
+padding-bottom: 24px;
+}

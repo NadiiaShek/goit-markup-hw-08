@@ -2,6 +2,7 @@
 	@media screen and (max-width: 767px) { 
 	display: flex;
 	}
+	
 }
 
 .menu-open-btn {
@@ -27,6 +28,12 @@
 	display: none;
 }
 }
+
+// .mob-menu .is-hidden {
+// 	transition: transform var(--animation-timing-function);
+	
+// }
+
 .mob-menu {
 	
 position: fixed; 
@@ -36,10 +43,18 @@ position: fixed;
 	background-color: var(--body-background-color);
 	width: 100vw;
 	height: 100vh;
-	padding-top: 10px;padding-bottom: 48px;
+	padding-top: 10px;
+	padding-bottom: 48px;
 	overflow-y: auto;
+	transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 	
-}
+	}
+
+
+	
+	
+
+
 
 	
 .mob-menu .conteiner {
@@ -121,6 +136,7 @@ margin-bottom: 32px;
 	display: flex;
 	margin-left: 0;
 	@extend %list;
+	flex-wrap: wrap;
 	
 }
 
