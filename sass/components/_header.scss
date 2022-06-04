@@ -59,6 +59,8 @@
 	transition: color var(--animation-timing-function);}
 
 	@include tab {
+	padding-top: 0;
+	padding-bottom:0;
 	
 	position: relative;
 	display: flex;
@@ -83,20 +85,6 @@
 	transition: color var(--animation-timing-function);}
 }
 }
-
-.mail {
-	@include tab {
-	padding-top: 20px;
-	}
-}
-
-.phone {
-	@include tab {
-	padding-bottom: 20px;
-	}
-}
-
-
 
 
 .navigation__item:not(:last-child) {
@@ -213,4 +201,22 @@ header {
 	fill: currentColor;
 }
 
+.mail {
+	@include tab {
+	padding-top: 20px;
+	}
+	@include desk {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	}
+}
 
+.phone {
+	@include tab {
+	padding-bottom: 20px;
+	}
+	@include desk {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	}
+}

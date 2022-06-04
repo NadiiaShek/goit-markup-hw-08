@@ -259,6 +259,8 @@ img {
 }
 @media screen and (min-width: 768px) {
   .contacts-group__link {
+    padding-top: 0;
+    padding-bottom: 0;
     position: relative;
     display: flex;
     align-items: center;
@@ -283,18 +285,6 @@ img {
   .contacts-group__link:hover, .contacts-group__link:focus {
     color: var(--focus-hover-color);
     transition: color var(--animation-timing-function);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .mail {
-    padding-top: 20px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .phone {
-    padding-bottom: 20px;
   }
 }
 
@@ -411,6 +401,30 @@ header {
 .contacts-group__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .mail {
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mail {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .phone {
+    padding-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .phone {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -535,6 +549,7 @@ header {
 }
 
 .soc-wrap__item {
+  margin-bottom: 20px;
   position: relative;
   font-weight: 500;
   font-size: 18px;
@@ -1658,6 +1673,7 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .social-footer {
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -1786,6 +1802,7 @@ header {
 }
 @media screen and (min-width: 1200px) {
   .subscription-footer {
+    margin-top: 10px;
     width: 570px;
     height: 86px;
     flex-direction: row;

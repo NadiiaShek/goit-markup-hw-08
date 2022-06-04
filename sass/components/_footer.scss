@@ -198,6 +198,7 @@ margin: auto;
 	
 }
 @include desk { 
+	margin-top: 10px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -320,6 +321,7 @@ margin: auto;
 }
 	
 @include desk {
+margin-top: 10px;
 	width: 570px;
 	height: 86px;
    flex-direction: row;
