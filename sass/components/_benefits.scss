@@ -51,15 +51,17 @@ justify-content: center;
 
 .our-benefits__list {
 	@extend %list;
-	margin-right: -30px;
+	
 @include tab {
 		display: flex;	
 		flex-wrap: wrap;
+		margin-right: -30px;
 		}
 
 @include desk {
 		display: flex;
 		flex-wrap: nowrap;
+		margin-right: -30px;
 			
 		}
 }

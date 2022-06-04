@@ -4,9 +4,37 @@
 	margin-right: 0px;
 	margin-left: 0px;
 	display: flex;
+	justify-content: start;
+	flex-wrap: wrap;
     align-items: baseline;
 	background-color: var(--second-background);
+	@include tab {
+		flex-wrap: nowrap;
+	}
+	@include desk {
+		display: flex;
+		align-items: baseline;
+flex-wrap: nowrap;
+	}
 
+}
+
+.footer .conteiner {
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	@include tab {
+	justify-content: center;
+	}
+
+	@include desk { 
+	flex-wrap: nowrap;
+	display: flex;
+	align-items: baseline;
+	
+	}
 }
 
 .address {
@@ -78,32 +106,36 @@ display: flex;
 	@extend %link-decoration;
 }
 
-.address-block {
-
-
-	@include tab {
-	display: flex;
-	align-items: baseline;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	}
-
-	@include desk {
-	
-	display: flex;
-	align-items: baseline;
-	justify-content: space-between;
-	flex-wrap: nowrap;
-	}
-}
 
 .tablet-wrap {
-	@media screen and (min-width:786px) {
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+		
+	
+@include mob {
+	display: flex;
+	margin: auto;
+flex-direction: column;
+	justify-content: center;
+    align-items: baseline;
+}
+
+@include tab {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: baseline;
+    
+}
+@include desk {
+	display: flex;
+	justify-content: start;
 	flex-wrap: nowrap;	
     align-items: baseline;
-	}
+}
+
 }
 
 .footer-contacts {
@@ -118,9 +150,11 @@ margin: auto;
  }
 
 @include tab {
+
+	margin-right: 165px;
 	margin-bottom: 60;
 	text-align: center;
-	margin-right: 165px;
+	
 	
 
 }
@@ -319,7 +353,7 @@ margin-bottom: 0px;
 }
 
 .email-input-footer {
-	width: 150%;
+	width: 320px;
 	height: 50px;
 	margin-bottom: 20px;
 	background-color: inherit;

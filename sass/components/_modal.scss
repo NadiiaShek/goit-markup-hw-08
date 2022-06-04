@@ -116,13 +116,15 @@
 .modal-policy {
 	@extend %centeredFlex;
 	margin-bottom: 30px;
+	
+
 }
 
 
 .text-checkbox {
-	display: inline-block;
+	display: inline-flex;
 		flex-wrap: wrap;
-		justify-content: center;
+justify-content: start;
 		align-items: center;
 	
 
