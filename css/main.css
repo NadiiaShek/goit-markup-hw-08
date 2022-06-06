@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 
-.icon-checkbox, .custom-checkbox, .btn-send-modale, .close-modal, .close-btn, .policy-link, .backdrop, .social-footer__link, .main-directions__label, .hero .button, .contacts-group__icon {
+.icon-checkbox, .custom-checkbox, .btn-send-modale, .close-modal, .close-btn, .backdrop, .social-footer__link, .main-directions__label, .hero .button, .contacts-group__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2088,6 +2088,7 @@ header {
 }
 
 .policy-link {
+  display: inline-block;
   margin-left: 4px;
   text-decoration-line: underline;
   color: var(--current-color);

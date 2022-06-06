@@ -155,7 +155,7 @@ justify-content: start;
 }
 
 .policy-link {
-	@extend %centeredFlex;
+	display: inline-block;
 	margin-left: 4px;
 	text-decoration-line: underline;
 	color: var(--current-color);
