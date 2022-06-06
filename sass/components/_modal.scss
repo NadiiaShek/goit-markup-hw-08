@@ -114,15 +114,16 @@
 
 
 .modal-policy {
-	@extend %centeredFlex;
+	display: inline-block;
 	margin-bottom: 30px;
+
 	
 
 }
 
 
 .text-checkbox {
-	display: inline-flex;
+	display: inline-block;
 		flex-wrap: wrap;
 justify-content: start;
 		align-items: center;
@@ -162,6 +163,7 @@ justify-content: start;
 	border: 1px solid var(--focus-hover-color);}
     @include mob {
 		@include font(normal, 12px, 1.16, 0.03em);
+		display: inline-block;
 	} 
 	  
 	@include tab {

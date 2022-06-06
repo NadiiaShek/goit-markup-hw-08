@@ -111,7 +111,7 @@ display: flex;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: auto;
+	
 		
 	
 @include mob {
@@ -127,6 +127,10 @@ flex-direction: column;
 	flex-wrap: nowrap;
 	flex-direction: row;
 	align-items: baseline;
+	
+	margin-bottom: 60px;
+	padding-left: 76px;
+	padding-right: 89px;
     
 }
 @include desk {
@@ -141,18 +145,18 @@ flex-direction: column;
 .footer-contacts {
 margin: auto;
 	text-align: center;
-	margin-bottom: 60px;
+	
 
 @include mob { 
 	margin: auto;
 	text-align: center;
 	margin-bottom: 60px;
+	
  }
 
 @include tab {
-
-	margin-right: 165px;
-	margin-bottom: 60;
+margin-right: 150px;
+	margin-bottom: 0;
 	text-align: center;
 	
 	
@@ -195,6 +199,7 @@ margin: auto;
 	align-items: baseline;
 	justify-content: space-between;
 	height: 80px;
+	margin-bottom: 0;
 	
 }
 @include desk { 

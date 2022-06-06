@@ -1,5 +1,6 @@
 
 .custom-checkbox {
+	display: inline-block;
 	position: relative;
 	@extend %centeredFlex;
 	width: 16px;
